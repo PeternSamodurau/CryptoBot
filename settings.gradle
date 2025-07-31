@@ -1,0 +1,8 @@
+rootProject.name = 'CryptoBot'
+
+//include 'price-service'
+//include 'subscription-service'
+//include 'notification-service'
+//include 'user-service'
+//include 'telegram-interface'
+//include 'common'
