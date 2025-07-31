@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CryptoBot.iml" filepath="$PROJECT_DIR$/.idea/CryptoBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway/CryptoBot.api-gateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway/CryptoBot.api-gateway.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway/CryptoBot.api-gateway.test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway/CryptoBot.api-gateway.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server/CryptoBot.eureka-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server/CryptoBot.eureka-server.main.iml" />
     </modules>
   </component>
 </project>
