@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  eureka-server:
+    build:
+      context: ./eureka-server
+      dockerfile: Dockerfile
+    image: eureka-server
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - spring-micro-demo-net
+
+networks:
+  spring-micro-demo-net:
+    driver: bridge

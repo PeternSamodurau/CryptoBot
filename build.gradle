@@ -1,24 +1,18 @@
-plugins {
-    id 'java'
-}
+subprojects {
+    apply plugin: 'java'
 
-group = 'com.skillbox.cryptobot'
-version = '0.0.1-SNAPSHOT'
+    repositories {
+        mavenCentral()
+    }
 
-sourceCompatibility = '17'
-targetCompatibility = '17'
+    dependencies {
+        compileOnly 'org.projectlombok:lombok:1.18.30'
+        annotationProcessor 'org.projectlombok:lombok:1.18.30'
 
-repositories {
-    mavenCentral()
-}
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    }
 
-dependencies {
-    compileOnly 'org.projectlombok:lombok:1.18.30'
-    annotationProcessor 'org.projectlombok:lombok:1.18.30'
-
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
-}
-
-test {
-    useJUnitPlatform()
+    test {
+        useJUnitPlatform()
+    }
 }

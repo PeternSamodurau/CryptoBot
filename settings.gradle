@@ -1,5 +1,6 @@
 rootProject.name = 'CryptoBot'
 
+include 'eureka-server'
 //include 'price-service'
 //include 'subscription-service'
 //include 'notification-service'
