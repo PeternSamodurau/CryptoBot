@@ -31,6 +31,19 @@ services:
     networks:
       - spring-micro-demo-net
 
+  bot-init:
+    build:
+      context: ./bot-init
+      dockerfile: Dockerfile
+    image: bot-init
+    container_name: bot-init
+    ports:
+      - "8082:8080"
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+    networks:
+      - spring-micro-demo-net
 
 networks:
   spring-micro-demo-net:
