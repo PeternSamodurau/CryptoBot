@@ -38,7 +38,21 @@ services:
     image: bot-init
     container_name: bot-init
     ports:
-      - "8082:8080"
+      - "8084:8084"
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+    networks:
+      - spring-micro-demo-net
+
+  bot-commands:
+    build:
+      context: ./bot-commands
+      dockerfile: Dockerfile
+    image: bot-commands
+    container_name: bot-commands
+    ports:
+      - "8085:8085"
     depends_on:
       eureka-server:
         condition: service_healthy
