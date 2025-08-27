@@ -18,7 +18,7 @@ public class BotCommandApplication {
     public void onApplicationEvent(WebServerInitializedEvent event) {
         int port = event.getWebServer().getPort();
         String url = "http://localhost:" + port;
-        log.info("===================Bot init and started on URL : {}", url);
+        log.info("===================BotCommands started on URL : {}", url);
     }
 
 }

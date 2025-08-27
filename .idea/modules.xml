@@ -5,8 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway/CryptoBot.api-gateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway/CryptoBot.api-gateway.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway/CryptoBot.api-gateway.test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway/CryptoBot.api-gateway.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bot-commands/CryptoBot.bot-commands.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bot-commands/CryptoBot.bot-commands.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bot-init/CryptoBot.bot-init.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bot-init/CryptoBot.bot-init.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server/CryptoBot.eureka-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server/CryptoBot.eureka-server.main.iml" />
     </modules>
   </component>
 </project>
