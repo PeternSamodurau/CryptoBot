@@ -12,7 +12,6 @@ public class CommandService {
         return List.of(
                 new BotCommand("/start", "Приветствие пользователя"),
                 new BotCommand("/register", "Регистрация пользователя в системе"),
-                new BotCommand("/help", "Получение справки по работе с ботом"),
                 new BotCommand("/get_price", "Получение текущего курса криптовалюты"),
                 new BotCommand("/subscribe", "Подписка на уведомления об изменении курса"),
                 new BotCommand("/unsubscribe", "Отписка от уведомлений"),
