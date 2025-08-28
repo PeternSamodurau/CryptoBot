@@ -6,20 +6,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/commands")
 public class CommandController {
 
-    private final CommandService commandService;
-
-    public CommandController(CommandService commandService) {
-        this.commandService = commandService;
-    }
-
     @GetMapping
     public List<BotCommand> getCommands() {
-        return commandService.getCommands();
+        return Arrays.stream(CommandService.values())
+                .map(commandEnum -> new BotCommand(commandEnum.getCommand(), commandEnum.getDescription()))
+                .collect(Collectors.toList());
     }
 }

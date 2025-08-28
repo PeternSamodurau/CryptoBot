@@ -1,21 +1,19 @@
 package by.spvrent.botcommand.service;
 
-import by.spvrent.botcommand.model.BotCommand;
-import org.springframework.stereotype.Service;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
-import java.util.List;
+@Getter
+@RequiredArgsConstructor
+public enum CommandService {
 
-@Service
-public class CommandService {
+    START("/start", "Приветствие пользователя"),
+    REGISTER("/register", "Регистрация пользователя в системе"),
+    GET_PRICE("/get_price", "Получение текущего курса криптовалюты"),
+    SUBSCRIBE("/subscribe", "Подписка на уведомления об изменении курса"),
+    UNSUBSCRIBE("/unsubscribe", "Отписка от уведомлений"),
+    MY_SUBSCRIPTIONS("/my_subscriptions", "Просмотр своих подписок");
 
-    public List<BotCommand> getCommands() {
-        return List.of(
-                new BotCommand("/start", "Приветствие пользователя"),
-                new BotCommand("/register", "Регистрация пользователя в системе"),
-                new BotCommand("/get_price", "Получение текущего курса криптовалюты"),
-                new BotCommand("/subscribe", "Подписка на уведомления об изменении курса"),
-                new BotCommand("/unsubscribe", "Отписка от уведомлений"),
-                new BotCommand("/my_subscriptions", "Просмотр своих подписок")
-        );
-    }
+    private final String command;
+    private final String description;
 }
