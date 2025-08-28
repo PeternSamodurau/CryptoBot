@@ -3,16 +3,14 @@ package by.spvrent.botinit.configuration;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("application.properties")
 @Data
 public class BotProperties {
 
-    @Value("${bot.name}")
+    @Value("${BOT_NAME}")
     private String botName;
 
-    @Value("${bot.token}")
+    @Value("${BOT_TOKEN}")
     private String botToken;
 }
